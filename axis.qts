@@ -1,0 +1,551 @@
+l q1
+ttlFr. 1: Seit wann erhalten Sie Easy Life?
+ttl
+n10Basis:;unl1
+n33Alle Befragten
+n33
+n01Seit weniger als 1 Jahr  ;c=c9'1'
+n01Seit mehr als 1 Jahr     ;c=c9'2'
+n01keine Angabe    ;c=-
+
+l q2
+ttlFr. 2: Welche Ausgabe der Easy Life erhalten Sie?
+ttl
+n10Basis:;unl1
+n33Alle Befragten
+n33
+n01Primarstufenausgabe                        ;c=c10'1'
+n01Sekundarstufenausgabe                      ;c=c10'2'
+n01beide Ausgaben, Primar- und Sekundarstufe  ;c=c10'3'
+n01keine Angabe    ;c=-
+
+l q3_01
+ttlFr. 3: Wie häufig nutzen Sie Easy Life für folgende Zwecke? Bitte kreuzen Sie jeweils an.
+ttl
+n10Basis:;unl1
+n33Alle Befragten
+n33
+n03Als Anregung für Unterrichtsthemen;unl1
+*include iq3.qts;col(a)=11
+l q3_02
+ttlFr. 3: Wie häufig nutzen Sie Easy Life für folgende Zwecke? Bitte kreuzen Sie jeweils an.
+ttl
+n10Basis:;unl1
+n33Alle Befragten
+n33
+n03Zur Unterrichtsvorbereitung;unl1
+*include iq3.qts;col(a)=12
+l q3_03
+ttlFr. 3: Wie häufig nutzen Sie Easy Life für folgende Zwecke? Bitte kreuzen Sie jeweils an.
+ttl
+n10Basis:;unl1
+n33Alle Befragten
+n33
+n03Um Unterrichtsmaterialien daraus zu entnehmen (Kopiervorlagen);unl1
+*include iq3.qts;col(a)=13
+l q3_04
+ttlFr. 3: Wie häufig nutzen Sie Easy Life für folgende Zwecke? Bitte kreuzen Sie jeweils an.
+ttl
+n10Basis:;unl1
+n33Alle Befragten
+n33
+n03Zur Recherche von Internetadressen zu den Artikeln;unl1
+*include iq3.qts;col(a)=14
+l q3_05
+ttlFr. 3: Wie häufig nutzen Sie Easy Life für folgende Zwecke? Bitte kreuzen Sie jeweils an.
+ttl
+n10Basis:;unl1
+n33Alle Befragten
+n33
+n03Zur eigenen Weiterbildung;unl1
+*include iq3.qts;col(a)=15
+
+l q4
+ttlFr. 4: Was geschieht im allgemeinen mit den Exemplaren der Easy Life, wenn Sie sie gelesen haben?
+ttl       Welche der folgenden Aussagen treffen auf Sie zu?
+ttl
+n10Basis:;unl1
+n33Alle Befragten
+n33
+n01Ich sammle bzw. archiviere die Exemplare     ;c=c16'1'
+n01Ich sammle einzelne Beiträge separat         ;c=c17'1'
+n01Ich sammle die Kopiervorlagen separat        ;c=c18'1'
+n01Ich gebe die Zeitschrift an Kollegen weiter  ;c=c19'1'
+n01Ich werfe die Zeitschrift weg                ;c=c20'1'
+n01keine Angabe     ;c=-
+
+l q5
+ttlFr. 5: Wie zufrieden sind Sie insgesamt mit Easy Life? Bitte vergeben Sie eine Note von 1 - 6.
+ttl       1 = sehr zufrieden, 6 = gar nicht zufrieden
+ttl
+n10Basis:;unl1
+n33Alle Befragten
+n33
+n01sehr zufrieden           (1);c=c21'1'
+n01                         (2);c=c21'2'
+n01                         (3);c=c21'3'
+n01                         (4);c=c21'4'
+n01                         (5);c=c21'5'
+n01gar nicht zufrieden      (6);c=c21'6'
+n01keine Angabe   ;c=-
+n03
+n01Top-Two-Box (1+2)           ;c=c21'12'
+n01Low-Two-Box (5+6)           ;c=c21'56'
+n03
+n25;inc=c21;c=c21.gt.0
+n12Mittelwert
+
+l q6;nz
+ttlFr. 6: Bitte schreiben Sie hier in Stichworten auf, was Ihnen an Easy Life gefällt, was Sie gut finden bzw.
+ttl       was für Sie besonders nützlich ist.
+ttl
+n10Basis:;unl1
+n33Alle Befragten
+n33
+*include iq6.qts;col(a)=101
+
+l q7;nz
+ttlFr. 7: Und notieren Sie bitte hier wieder in Stichworten, was Ihnen an Easy Life nicht gefällt
+ttl       bzw. was Sie stört.
+ttl
+n10Basis:;unl1
+n33Alle Befragten
+n33
+*include iq7.qts;col(a)=201
+
+l q8_mw
+ttlFr. 8: Inwieweit treffen die im Folgenden aufgelisteten Eigenschaften auf Easy Life zu? Bitte kreuzen
+ttl       Sie jeweils an.
+ttl       (1=trifft voll und ganz zu, 2=trifft eher zu, 3=trifft eher nicht zu, 4=trifft überhaupt nicht zu)
+ttl
+n10Basis:;unl1
+n33Alle Befragten
+n33
+n23Mittelwerte 1-4;unl1
+n33
+n25;inc=c22;c=c22.gt.0
+n12ist nützlich für meine berufliche Praxis
+n25;inc=c23;c=c23.gt.0
+n12ist modern, zeitgemäß gestaltet
+n25;inc=c24;c=c24.gt.0
+n12ist klar und übersichtlich gegliedert
+n25;inc=c25;c=c25.gt.0
+n12informiert seriös und neutral
+n25;inc=c26;c=c26.gt.0
+n12ist leicht verständlich
+n25;inc=c27;c=c27.gt.0
+n12beleuchtet die Themen umfassend und fundiert
+n25;inc=c28;c=c28.gt.0
+n12bietet hilfreiche Unterrichtsmaterialien
+n25;inc=c29;c=c29.gt.0
+n12bietet gute Anregungen für die Unterrichtsgestaltung
+
+l q8_t
+ttlFr. 8: Inwieweit treffen die im Folgenden aufgelisteten Eigenschaften auf Easy Life zu? Bitte kreuzen
+ttl       Sie jeweils an.
+ttl       (1=trifft voll und ganz zu, 2=trifft eher zu, 3=trifft eher nicht zu, 4=trifft überhaupt nicht zu)
+ttl
+n10Basis:;unl1
+n33Alle Befragten
+n33
+n23Top-Box (1);unl1
+n33
+n01ist nützlich für meine berufliche Praxis              ;c=c22'1'
+n01ist modern, zeitgemäß gestaltet                       ;c=c23'1'
+n01ist klar und übersichtlich gegliedert                 ;c=c24'1'
+n01informiert seriös und neutral                         ;c=c25'1'
+n01ist leicht verständlich                               ;c=c26'1'
+n01beleuchtet die Themen umfassend und fundiert          ;c=c27'1'
+n01bietet hilfreiche Unterrichtsmaterialien              ;c=c28'1'
+n01bietet gute Anregungen für die Unterrichtsgestaltung  ;c=c29'1'
+
+l q8_t2
+ttlFr. 8: Inwieweit treffen die im Folgenden aufgelisteten Eigenschaften auf Easy Life zu? Bitte kreuzen
+ttl       Sie jeweils an.
+ttl       (1=trifft voll und ganz zu, 2=trifft eher zu, 3=trifft eher nicht zu, 4=trifft überhaupt nicht zu)
+ttl
+n10Basis:;unl1
+n33Alle Befragten
+n33
+n23Top-Two-Box (1+2);unl1
+n33
+n01ist nützlich für meine berufliche Praxis              ;c=c22'12'
+n01ist modern, zeitgemäß gestaltet                       ;c=c23'12'
+n01ist klar und übersichtlich gegliedert                 ;c=c24'12'
+n01informiert seriös und neutral                         ;c=c25'12'
+n01ist leicht verständlich                               ;c=c26'12'
+n01beleuchtet die Themen umfassend und fundiert          ;c=c27'12'
+n01bietet hilfreiche Unterrichtsmaterialien              ;c=c28'12'
+n01bietet gute Anregungen für die Unterrichtsgestaltung  ;c=c29'12'
+
+l q8_l
+ttlFr. 8: Inwieweit treffen die im Folgenden aufgelisteten Eigenschaften auf Easy Life zu? Bitte kreuzen
+ttl       Sie jeweils an.
+ttl       (1=trifft voll und ganz zu, 2=trifft eher zu, 3=trifft eher nicht zu, 4=trifft überhaupt nicht zu)
+ttl
+n10Basis:;unl1
+n33Alle Befragten
+n33
+n23Low-Two-Box (3+4);unl1
+n33
+n01ist nützlich für meine berufliche Praxis              ;c=c22'34'
+n01ist modern, zeitgemäß gestaltet                       ;c=c23'34'
+n01ist klar und übersichtlich gegliedert                 ;c=c24'34'
+n01informiert seriös und neutral                         ;c=c25'34'
+n01ist leicht verständlich                               ;c=c26'34'
+n01beleuchtet die Themen umfassend und fundiert          ;c=c27'34'
+n01bietet hilfreiche Unterrichtsmaterialien              ;c=c28'34'
+n01bietet gute Anregungen für die Unterrichtsgestaltung  ;c=c29'34'
+
+l q8_01
+ttlFr. 8: Inwieweit treffen die im Folgenden aufgelisteten Eigenschaften auf Easy Life zu? Bitte kreuzen
+ttl       Sie jeweils an.
+ttl       (1=trifft voll und ganz zu, 2=trifft eher zu, 3=trifft eher nicht zu, 4=trifft überhaupt nicht zu)
+ttl
+n10Basis:;unl1
+n33Alle Befragten
+n33
+n23ist nützlich für meine berufliche Praxis;unl1
+*include iq8.qts;col(a)=22
+l q8_02
+ttlFr. 8: Inwieweit treffen die im Folgenden aufgelisteten Eigenschaften auf Easy Life zu? Bitte kreuzen
+ttl       Sie jeweils an.
+ttl       (1=trifft voll und ganz zu, 2=trifft eher zu, 3=trifft eher nicht zu, 4=trifft überhaupt nicht zu)
+ttl
+n10Basis:;unl1
+n33Alle Befragten
+n33
+n23ist modern, zeitgemäß gestaltet;unl1
+*include iq8.qts;col(a)=23
+l q8_03
+ttlFr. 8: Inwieweit treffen die im Folgenden aufgelisteten Eigenschaften auf Easy Life zu? Bitte kreuzen
+ttl       Sie jeweils an.
+ttl       (1=trifft voll und ganz zu, 2=trifft eher zu, 3=trifft eher nicht zu, 4=trifft überhaupt nicht zu)
+ttl
+n10Basis:;unl1
+n33Alle Befragten
+n33
+n23ist klar und übersichtlich gegliedert;unl1
+*include iq8.qts;col(a)=24
+l q8_04
+ttlFr. 8: Inwieweit treffen die im Folgenden aufgelisteten Eigenschaften auf Easy Life zu? Bitte kreuzen
+ttl       Sie jeweils an.
+ttl       (1=trifft voll und ganz zu, 2=trifft eher zu, 3=trifft eher nicht zu, 4=trifft überhaupt nicht zu)
+ttl
+n10Basis:;unl1
+n33Alle Befragten
+n33
+n23informiert seriös und neutral;unl1
+*include iq8.qts;col(a)=25
+l q8_05
+ttlFr. 8: Inwieweit treffen die im Folgenden aufgelisteten Eigenschaften auf Easy Life zu? Bitte kreuzen
+ttl       Sie jeweils an.
+ttl       (1=trifft voll und ganz zu, 2=trifft eher zu, 3=trifft eher nicht zu, 4=trifft überhaupt nicht zu)
+ttl
+n10Basis:;unl1
+n33Alle Befragten
+n33
+n23ist leicht verständlich;unl1
+*include iq8.qts;col(a)=26
+l q8_06
+ttlFr. 8: Inwieweit treffen die im Folgenden aufgelisteten Eigenschaften auf Easy Life zu? Bitte kreuzen
+ttl       Sie jeweils an.
+ttl       (1=trifft voll und ganz zu, 2=trifft eher zu, 3=trifft eher nicht zu, 4=trifft überhaupt nicht zu)
+ttl
+n10Basis:;unl1
+n33Alle Befragten
+n33
+n23beleuchtet die Themen umfassend und fundiert;unl1
+*include iq8.qts;col(a)=27
+l q8_07
+ttlFr. 8: Inwieweit treffen die im Folgenden aufgelisteten Eigenschaften auf Easy Life zu? Bitte kreuzen
+ttl       Sie jeweils an.
+ttl       (1=trifft voll und ganz zu, 2=trifft eher zu, 3=trifft eher nicht zu, 4=trifft überhaupt nicht zu)
+ttl
+n10Basis:;unl1
+n33Alle Befragten
+n33
+n23bietet hilfreiche Unterrichtsmaterialien;unl1
+*include iq8.qts;col(a)=28
+l q8_08
+ttlFr. 8: Inwieweit treffen die im Folgenden aufgelisteten Eigenschaften auf Easy Life zu? Bitte kreuzen
+ttl       Sie jeweils an.
+ttl       (1=trifft voll und ganz zu, 2=trifft eher zu, 3=trifft eher nicht zu, 4=trifft überhaupt nicht zu)
+ttl
+n10Basis:;unl1
+n33Alle Befragten
+n33
+n23bietet gute Anregungen für die Unterrichtsgestaltung;unl1
+*include iq8.qts;col(a)=29
+
+l q9_mw
+ttlFr. 9: Wie bewerten Sie folgende Inhalte der Easy Life im Hinblick auf den Nutzen für Ihre berufliche Praxis?
+ttl       Bitte stufen Sie für jeden Inhalt die Nützlichkeit ein.
+ttl       (1=sehr nützlich, 2=eher nützlich, 3=eher nicht nützlich, 4=gar nicht nützlich)
+ttl
+n10Basis:;unl1
+n33Alle Befragten
+n33
+n23Mittelwerte (1-4);unl1
+n33
+n25;inc=c30;c=c30.gt.0
+n12Hinweise auf weiterführende Internet-Adressen
+n25;inc=c31;c=c31.gt.0
+n12Fachbeiträge
+n25;inc=c32;c=c32.gt.0
+n12Anregungen für Aufgaben bzw. Übungen der Schüler zu den Themen
+n25;inc=c33;c=c33.gt.0
+n12Kopiervorlagen
+n25;inc=c34;c=c34.gt.0
+n12Buchtipps
+
+l q9_t
+ttlFr. 9: Wie bewerten Sie folgende Inhalte der Easy Life im Hinblick auf den Nutzen für Ihre berufliche Praxis?
+ttl       Bitte stufen Sie für jeden Inhalt die Nützlichkeit ein.
+ttl       (1=sehr nützlich, 2=eher nützlich, 3=eher nicht nützlich, 4=gar nicht nützlich)
+ttl
+n10Basis:;unl1
+n33Alle Befragten
+n33
+n23Top-Box (1);unl1
+n33
+n01Hinweise auf weiterführende Internet-Adressen                   ;c=c30'1'
+n01Fachbeiträge                                                    ;c=c31'1'
+n01Anregungen für Aufgaben bzw. Übungen der Schüler zu den Themen  ;c=c32'1'
+n01Kopiervorlagen                                                  ;c=c33'1'
+n01Buchtipps                                                       ;c=c34'1'
+
+l q9_t2
+ttlFr. 9: Wie bewerten Sie folgende Inhalte der Easy Life im Hinblick auf den Nutzen für Ihre berufliche Praxis?
+ttl       Bitte stufen Sie für jeden Inhalt die Nützlichkeit ein.
+ttl       (1=sehr nützlich, 2=eher nützlich, 3=eher nicht nützlich, 4=gar nicht nützlich)
+ttl
+n10Basis:;unl1
+n33Alle Befragten
+n33
+n23Top-Two-Box (1+2);unl1
+n33
+n01Hinweise auf weiterführende Internet-Adressen                   ;c=c30'12'
+n01Fachbeiträge                                                    ;c=c31'12'
+n01Anregungen für Aufgaben bzw. Übungen der Schüler zu den Themen  ;c=c32'12'
+n01Kopiervorlagen                                                  ;c=c33'12'
+n01Buchtipps                                                       ;c=c34'12'
+
+l q9_l
+ttlFr. 9: Wie bewerten Sie folgende Inhalte der Easy Life im Hinblick auf den Nutzen für Ihre berufliche Praxis?
+ttl       Bitte stufen Sie für jeden Inhalt die Nützlichkeit ein.
+ttl       (1=sehr nützlich, 2=eher nützlich, 3=eher nicht nützlich, 4=gar nicht nützlich)
+ttl
+n10Basis:;unl1
+n33Alle Befragten
+n33
+n23Low-Two-Box (3+4);unl1
+n33
+n01Hinweise auf weiterführende Internet-Adressen                   ;c=c30'34'
+n01Fachbeiträge                                                    ;c=c31'34'
+n01Anregungen für Aufgaben bzw. Übungen der Schüler zu den Themen  ;c=c32'34'
+n01Kopiervorlagen                                                  ;c=c33'34'
+n01Buchtipps                                                       ;c=c34'34'
+
+l q9_01
+ttlFr. 9: Wie bewerten Sie folgende Inhalte der Easy Life im Hinblick auf den Nutzen für Ihre berufliche Praxis?
+ttl       Bitte stufen Sie für jeden Inhalt die Nützlichkeit ein.
+ttl       (1=sehr nützlich, 2=eher nützlich, 3=eher nicht nützlich, 4=gar nicht nützlich)
+ttl
+n10Basis:;unl1
+n33Alle Befragten
+n33
+n23Hinweise auf weiterführende Internet-Adressen;unl1
+*include iq9.qts;col(a)=30
+l q9_02
+ttlFr. 9: Wie bewerten Sie folgende Inhalte der Easy Life im Hinblick auf den Nutzen für Ihre berufliche Praxis?
+ttl       Bitte stufen Sie für jeden Inhalt die Nützlichkeit ein.
+ttl       (1=sehr nützlich, 2=eher nützlich, 3=eher nicht nützlich, 4=gar nicht nützlich)
+ttl
+n10Basis:;unl1
+n33Alle Befragten
+n33
+n23Fachbeiträge;unl1
+*include iq9.qts;col(a)=31
+l q9_03
+ttlFr. 9: Wie bewerten Sie folgende Inhalte der Easy Life im Hinblick auf den Nutzen für Ihre berufliche Praxis?
+ttl       Bitte stufen Sie für jeden Inhalt die Nützlichkeit ein.
+ttl       (1=sehr nützlich, 2=eher nützlich, 3=eher nicht nützlich, 4=gar nicht nützlich)
+ttl
+n10Basis:;unl1
+n33Alle Befragten
+n33
+n23Anregungen für Aufgaben bzw. Übungen der Schüler zu den Themen;unl1
+*include iq9.qts;col(a)=32
+l q9_04
+ttlFr. 9: Wie bewerten Sie folgende Inhalte der Easy Life im Hinblick auf den Nutzen für Ihre berufliche Praxis?
+ttl       Bitte stufen Sie für jeden Inhalt die Nützlichkeit ein.
+ttl       (1=sehr nützlich, 2=eher nützlich, 3=eher nicht nützlich, 4=gar nicht nützlich)
+ttl
+n10Basis:;unl1
+n33Alle Befragten
+n33
+n23Kopiervorlagen;unl1
+*include iq9.qts;col(a)=33
+l q9_05
+ttlFr. 9: Wie bewerten Sie folgende Inhalte der Easy Life im Hinblick auf den Nutzen für Ihre berufliche Praxis?
+ttl       Bitte stufen Sie für jeden Inhalt die Nützlichkeit ein.
+ttl       (1=sehr nützlich, 2=eher nützlich, 3=eher nicht nützlich, 4=gar nicht nützlich)
+ttl
+n10Basis:;unl1
+n33Alle Befragten
+n33
+n23Buchtipps;unl1
+*include iq9.qts;col(a)=34
+
+l q10
+ttlFr. 10: Wie beurteilen Sie die Länge der Fachbeiträge?
+ttl
+n10Basis:;unl1
+n33Alle Befragten
+n33
+n01Zu kurz        ;c=c35'1'
+n01Gerade richtig ;c=c35'2'
+n01Zu lang        ;c=c35'3'
+n01keine Angabe   ;c=-
+
+l q11
+ttlFr. 11: Ich habe hier einige Themenschwerpunkte. Welche dieser Themen sind für Ihre berufliche Praxis besonders wichtig?
+ttl        Bitte kreuzen Sie maximal 5 Themen an!
+ttl
+n10Basis:;unl1
+n33Alle Befragten
+n33
+n01Gesunde Ernährung allgemein                     ;c=c36'1'
+n01Ernährungserziehung                             ;c=c37'1'
+n01Lebensmittelerzeugung, -technologie             ;c=c38'1'
+n01Lebensmittelqualität und -sicherheit            ;c=c39'1'
+n01Lebensmittelinhaltsstoffe, Lebensmittelchemie   ;c=c40'1'
+n01Tierhaltung                                     ;c=c41'1'
+n01Pflanzenbau                                     ;c=c42'1'
+n01Bauernhof als außerschulischer Lernort          ;c=c43'1'
+n01Landwirtschaft als Wirtschaftsfaktor            ;c=c44'1'
+n01Agrarpolitik                                    ;c=c45'1'
+n01Ökologischer Landbau                            ;c=c46'1'
+n01Grüne Gentechnik                                ;c=c47'1'
+n01Schulgarten                                     ;c=c48'1'
+n01Nachwachsende Rohstoffe                         ;c=c49'1'
+n01keine Angabe    ;c=-
+
+l s1
+ttlS. 1: Geschlecht
+ttl
+n10Basis:;unl1
+n33Alle Befragten
+n33
+n01männlich    ;c=c50'1'
+n01weiblich    ;c=c50'2'
+n01keine Angabe   ;c=-2;nz
+
+l s2
+ttlS. 2: Alter
+ttl
+n10Basis:;unl1
+n33Alle Befragten
+n33
+n0120-29 Jahre         ;c=c51'1'
+n0130-39 Jahre         ;c=c51'2'
+n0140-49 Jahre         ;c=c51'3'
+n0150-59 Jahre         ;c=c51'4'
+n0160-65 Jahre         ;c=c51'5'
+n0166 Jahre und älter  ;c=c51'6'
+n01keine Angabe   ;c=-6;nz
+
+l s3
+ttlS. 3: Bundesland
+ttl
+n10Basis:;unl1
+n33Alle Befragten
+n33
+n01Schleswig-Holstein        ;c=c(52,53).eq.01
+n01Hamburg                   ;c=c(52,53).eq.02
+n01Niedersachsen             ;c=c(52,53).eq.03
+n01Bremen                    ;c=c(52,53).eq.04
+n01Nordrhein-Westfalen       ;c=c(52,53).eq.05
+n01Hessen                    ;c=c(52,53).eq.06
+n01Rheinland-Pfalz           ;c=c(52,53).eq.07
+n01Baden-Württemberg         ;c=c(52,53).eq.08
+n01Bayern                    ;c=c(52,53).eq.09
+n01Saarland                  ;c=c(52,53).eq.10
+n01Berlin                    ;c=c(52,53).eq.11
+n01Brandenburg               ;c=c(52,53).eq.12
+n01Mecklenburg-Vorpommern    ;c=c(52,53).eq.13
+n01Sachsen                   ;c=c(52,53).eq.14
+n01Sachsen-Anhalt            ;c=c(52,53).eq.15
+n01Thüringen                 ;c=c(52,53).eq.16
+n01keine Angabe   ;c=-;nz
+
+l s4
+ttlS. 4: An welcher Schule unterrichten Sie überwiegend?
+ttl
+n10Basis:;unl1
+n33Alle Befragten
+n33
+n01Grundschule                   ;c=c54'1'
+n01Hauptschule                   ;c=c54'2'
+n01Realschule                    ;c=c54'3'
+n01Gymnasium                     ;c=c54'4'
+n01Integrierte Gesamtschule      ;c=c54'5'
+n01Freie Schule (Waldorfschule)  ;c=c54'6'
+n01Sonderschule                  ;c=c54'7'
+n01Sonstiger Schultyp:           ;c=c55'1'
+n00;c=c55'1'
+n01   Fachoberschule / Fachoberstufe                  ;c=c301'1'
+n01   berufliche Schule / Berufskolleg /              ;c=c302'1'
+n33   Berufsschule
+n01   Privatschule                                    ;c=c303'1'
+n01   Sonstiges                                       ;c=-3
+n00
+n01keine Angabe   ;c=-;nz
+
+l s5
+ttlS. 5: Welche der folgenden Fächer unterrichten Sie?
+ttl
+n10Basis:;unl1
+n33Alle Befragten
+n33
+n01Erdkunde            ;c=c56'1'
+n01Biologie            ;c=c57'1'
+n01Chemie              ;c=c58'1'
+n01Physik              ;c=c59'1'
+n01Ernährungskunde     ;c=c60'1'
+n01Hauswirtschaft      ;c=c61'1'
+n01Religion / Ethik    ;c=c62'1'
+n01Sachkunde           ;c=c63'1'
+n01keine Angabe   ;c=-;nz
+
+l s6
+ttlS. 6: Haben Sie einen Internetzugang?
+ttl
+n10Basis:;unl1
+n33Alle Befragten
+n33
+n01Ja, nur in der Schule                     ;c=c64'1'
+n01Ja, sowohl in der Schule als auch privat  ;c=c64'2'
+n01Ja, nur privat                            ;c=c64'3'
+n01Nein                                      ;c=c64'4'
+n01keine Angabe   ;c=-;nz
+
+l s7
+ttlS. 7: Wie häufig nutzen Sie das Internet zur Recherche für Unterrichtsthemen / Unterrichtsmaterial?
+ttl
+n10Basis:;unl1
+n33Alle Befragten
+n33
+n01sehr häufig    (1);c=c65'1'
+n01Häufig         (2);c=c65'2'
+n01Gelegentlich   (3);c=c65'3'
+n01Selten         (4);c=c65'4'
+n01Nie            (5);c=c65'5'
+n01keine Angabe   ;c=-;nz
+n03
+n01Top-Two-Box (1+2)  ;c=c65'12'
+n01Low-Two-Box (4+5)  ;c=c65'45'
+n03
+n25;inc=c65;c=c65.gt.0
+n12Mittelwert
